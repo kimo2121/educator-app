@@ -14,14 +14,14 @@ const SignUpForm = () => {
     Email: "",
     ParentPhone: "",
     StudenPhone: "",
-    Governorate: "",
+    Governorate: {},
     Center: "",
     Class: "",
     User: {},
   });
   const handleGov = (e, { value }) => {
-    console.log({ value });
-    setValues({ ...values, Governorate: value });
+    console.log({ e });
+    setValues({ ...values, Governorate: { value, id: e.target.id } });
   };
   const handleCen = (e, { value }) => {
     console.log({ value });
@@ -32,7 +32,7 @@ const SignUpForm = () => {
     setValues({ ...values, Class: value });
   };
   const onUserChange = (e, { value }) => {
-    console.log({ value });
+    // console.log({ e });
     setValues({ ...values, Username: value });
   };
   return (
@@ -106,7 +106,7 @@ const SignUpForm = () => {
             onChange={handleCen}
             label="المركز"
             placeholder={centersOptions[0][0].text}
-            options={centersOptions[values.Governorate] || centersOptions[0]}
+            options={centersOptions[values.Governorate?.id] || centersOptions[0]}
           />
           <Form.Select
             style={{ height: "8vh", fontSize: "18px", marginBottom: "4%" }}
