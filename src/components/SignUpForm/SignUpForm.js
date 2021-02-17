@@ -63,6 +63,7 @@ const SignUpForm = () => {
                 height: "8vh",
                 marginBottom: "4%",
               }}
+              name={input.name}
               value={values && values[input.name]}
               onChange={onChange}
               fluid
