@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SignUpForm.css";
 import { Form } from "semantic-ui-react";
 import { useForm } from "../../util/util_functions";
@@ -8,6 +8,7 @@ import {
   yearSelect,
   inputFieldInfo,
 } from "./SignUpFormData";
+import axios from "axios";
 const SignUpForm = () => {
   const { onChange, onSubmit, values, setValues } = useForm({
     Username: "",
@@ -19,20 +20,36 @@ const SignUpForm = () => {
     Class: "",
     User: {},
   });
+  useEffect(() => {
+    axios
+      .post("http://104.155.188.57:8080/manasa/rest/student/studentregister", {
+        companyId: 74,
+        branchId: 176,
+        fullName: "string",
+        password: "string",
+        mobile: 2,
+        fatherMobile: 2,
+        fatherJob: 2,
+        gender: 2,
+        userName: values.Username,
+        stateId: 2,
+        email: "string",
+        schoolStagesId: 2,
+      })
+      .then((response) => {
+        console.log(response);
+      });
+  }, [values.User]);
   const handleGov = (e, { value }) => {
-    console.log({ e });
-    setValues({ ...values, Governorate: { value, id: e.target.id } });
+    setValues({ ...values, Governorate: { value: value, id: e.target.id } });
   };
   const handleCen = (e, { value }) => {
-    console.log({ value });
     setValues({ ...values, Center: value });
   };
   const handleClass = (e, { value }) => {
-    console.log({ value });
     setValues({ ...values, Class: value });
   };
   const onUserChange = (e, { value }) => {
-    // console.log({ e });
     setValues({ ...values, Username: value });
   };
   return (
@@ -105,8 +122,12 @@ const SignUpForm = () => {
             fluid
             onChange={handleCen}
             label="المركز"
-            placeholder={centersOptions[0][0].text}
-            options={centersOptions[values.Governorate?.id] || centersOptions[0]}
+            placeholder={
+              values.Governorate
+                ? centersOptions[values.Governorate.id][0].text
+                : centersOptions[0][0].text
+            }
+            options={centersOptions[values.Governorate?.id]}
           />
           <Form.Select
             style={{ height: "8vh", fontSize: "18px", marginBottom: "4%" }}

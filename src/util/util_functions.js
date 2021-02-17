@@ -21,15 +21,15 @@ export const useForm = (callback, initialState = {}) => {
   const [values, setValues] = useState(initialState);
 
   const onChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setValues({ ...values, [e.target.name]: e.target.value });
   };
   console.log({ values });
 
   const onSubmit = (event) => {
     event.preventDefault();
+    // console.log(values);
     setValues({ User: values });
-    console.log(values);
     // callback();
   };
 

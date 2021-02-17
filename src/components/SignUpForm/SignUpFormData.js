@@ -10,11 +10,11 @@ export const yearSelect = [
 ];
 
 export const GovernorateOptions = [
-  { text: "القاهرة", value: "cairo", id: "0" },
-  { text: "الأسكندرية", value: "alexandria", id: "1" },
-  { text: "الإسماعيلية", value: "esmaeilia", id: "2" },
-  { text: "الجيزة", value: "giza", id: "3" },
-  { text: "القليوبية", value: "qalyubia", id: "4" },
+  { text: "القاهرة", value: "cairo", id: 0 },
+  { text: "الأسكندرية", value: "alexandria", id: 1 },
+  { text: "الإسماعيلية", value: "esmaeilia", id: 2 },
+  { text: "الجيزة", value: "giza", id: 3 },
+  { text: "القليوبية", value: "qalyubia", id: 4 },
 ];
 export const centersOptions = [
   [{ text: "القاهرة", value: "cairo" }],

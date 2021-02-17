@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo2 from "../../assets/logo2.png";
+import logo2 from "../../assets/logo2.svg";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const routes = [
@@ -13,8 +13,12 @@ const Navbar = () => {
   return (
     <div className="nav-bar">
       <div className="nav-routes">
-        {routes.map((item,index) => (
-          <Link key={index} className={`${item.id} single-nav-route`} to={item.to}>
+        {routes.map((item, index) => (
+          <Link
+            key={index}
+            className={`${item.id} single-nav-route`}
+            to={item.to}
+          >
             <div>{item.text}</div>
           </Link>
         ))}

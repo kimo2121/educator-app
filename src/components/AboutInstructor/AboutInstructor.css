@@ -1,6 +1,6 @@
 .about-constructor {
   padding-top: 2%;
-  height: 70vh;
+  min-height: 70vh;
   margin: 0;
   background-color: rgb(255, 255, 255);
 }
@@ -10,9 +10,18 @@
   font-size: 25px;
   font-weight: 900;
 }
+@media only screen and (max-width: 600px) {
+  .intro {
+    display: block !important;
+  }
+  .intro img {
+    margin-left: 30%;
+    width: 45vw !important;
+  }
+}
 .intro {
   display: flex;
-  height: 40vh;
+  min-height: 40vh;
   justify-content: center;
 }
 .intro img {

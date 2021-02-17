@@ -18,9 +18,10 @@
 }
 .divider {
   position: absolute;
-  right: 0 !important;
+  right: 5% !important;
 }
 .item {
+ padding-left: 7rem !important;
   text-align: right !important;
 }
 .icon {
