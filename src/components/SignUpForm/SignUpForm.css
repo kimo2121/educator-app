@@ -1,0 +1,28 @@
+.form h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.form label {
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  color: #204f5d !important;
+  margin-bottom: 2% !important;
+}
+.form input {
+  direction: rtl !important;
+  text-align: start !important;
+}
+.form ::placeholder {
+  font-size: 20px;
+  text-align: right !important;
+}
+.divider {
+  position: absolute;
+  right: 0 !important;
+}
+.item {
+  text-align: right !important;
+}
+.icon {
+  right: 92% !important;
+}

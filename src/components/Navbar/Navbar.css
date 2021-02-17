@@ -1,0 +1,41 @@
+.nav-bar {
+  display: flex;
+  height: 10vh;
+  background-color: white;
+}
+.single-nav-route {
+  font-family: "Cairo", sans-serif !important;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 3%;
+  color: #198baf !important;
+}
+.sign-in {
+  background: #198baf;
+  color: white !important;
+}
+.sign-up {
+  background: #e3f1f5;
+}
+.sign-up,
+.sign-in {
+  margin-top: 1% !important;
+  width: 10vw;
+  height: 7vh;
+  padding-top: 2%;
+  border-radius: 50rem;
+}
+
+.nav-routes {
+  margin-left: 8%;
+  font-size: 20px;
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+}
+.nav-logo img {
+  margin-top: -35%;
+  margin-left: 80%;
+  width: 15rem;
+  height: 15rem;
+}

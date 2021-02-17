@@ -1,0 +1,17 @@
+.custome-btn,
+.sign-up-btn {
+  margin: 0 !important;
+  width: 50% !important;
+  height: 15vh !important;
+  border: none !important;
+  font-family: "Cairo", sans-serif !important ;
+  outline: none !important;
+  border-radius: 0 !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  color: white !important;
+  background-color: rgb(0, 154, 243) !important;
+}
+.sign-up-btn {
+  background-color: rgb(0, 68, 85) !important;
+}

@@ -1,0 +1,28 @@
+.footer-section-one {
+  height: 50vh;
+  background: #0f3a47;
+}
+.contact-info {
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 25px;
+  color: white;
+}
+.footer-section-one img {
+  margin-left: 7%;
+  width: 35vw;
+  height: 35vh;
+}
+.footer-section-two {
+  padding-top: 2%;
+  bottom: 0;
+  height: 12vh;
+  text-align: center;
+  background: #204f5d;
+}
+
+.footer-section-two span {
+  font-size: 25px;
+  color: white;
+}
+
