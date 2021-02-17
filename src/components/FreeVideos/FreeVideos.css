@@ -42,13 +42,13 @@
 }
 .all-vids-btn {
   margin-top: 2%;
-  width: 12vw;
+  min-width: 12vw;
   border: none;
   color: white;
   font-size: 16px;
   font-family: "Cairo", sans-serif;
   border-radius: 50px;
   outline: none;
-  height: 7vh;
+  min-height: 7vh;
   background: #198baf;
 }

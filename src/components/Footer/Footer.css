@@ -1,12 +1,28 @@
 .footer-section-one {
-  height: 50vh;
+  min-height: 50vh;
   background: #0f3a47;
 }
 .contact-info {
+  width: fit-content;
   margin-left: 10%;
   margin-top: 5%;
   font-size: 25px;
   color: white;
+}
+.paragraph-image {
+  display: flex;
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .footer-section-one {
+    padding-left: 20%;
+  }
+  .paragraph-image {
+    display: block;
+  }
+  .icons-div {
+    margin-left: -25% !important;
+  }
 }
 .footer-section-one img {
   margin-left: 7%;
@@ -15,8 +31,7 @@
 }
 .footer-section-two {
   padding-top: 2%;
-  bottom: 0;
-  height: 12vh;
+  min-height: 12vh;
   text-align: center;
   background: #204f5d;
 }
@@ -25,4 +40,3 @@
   font-size: 25px;
   color: white;
 }
-

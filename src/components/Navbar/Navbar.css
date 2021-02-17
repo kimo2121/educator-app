@@ -1,6 +1,6 @@
 .nav-bar {
   display: flex;
-  height: 10vh;
+  min-height: 10vh;
   background-color: white;
 }
 .single-nav-route {
@@ -33,9 +33,10 @@
   justify-content: space-evenly;
   display: flex;
 }
+.nav-logo {
+  right: 0;
+}
 .nav-logo svg {
-  margin-top: -35vw;
-  margin-left: 80%;
   width: 15rem;
   height: 15rem;
 }

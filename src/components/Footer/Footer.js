@@ -8,22 +8,22 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-section-one">
-        <div style={{ display: "flex", textAlign: "left" }}>
+        <div className='paragraph-image' >
           <img src={logo} alt="" />
           <div className="contact-info">
             <p>mr.mohamed@scince.com</p>
             <p>0109989989</p>
           </div>
         </div>
-        <div>
+        <div className='icons-div'>
           {icons.map((icon, index) => (
             <Icon
               key={index}
               style={{
                 color: "white",
                 borderRadius: "50px",
-                height: "10vh",
-                width: "10vh",
+                minHeight: "10vh",
+                minWidth: "10vh",
                 background: "#204f5d",
                 paddingTop: "1.2rem",
               }}
