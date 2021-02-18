@@ -9,48 +9,58 @@ import {
   inputFieldInfo,
 } from "./SignUpFormData";
 import axios from "axios";
+
 const SignUpForm = () => {
   const { onChange, onSubmit, values, setValues } = useForm({
-    Username: "",
-    Email: "",
-    ParentPhone: "",
-    StudenPhone: "",
-    Governorate: {},
+    fullName: "",
+    email: "",
+    fatherMobile: "",
+    mobile: "",
+    state: "",
     Center: "",
-    Class: "",
+    schoolStage: "",
     User: {},
   });
   useEffect(() => {
-    axios
-      .post("http://104.155.188.57:8080/manasa/rest/student/studentregister", {
-        companyId: 74,
-        branchId: 176,
-        fullName: "string",
-        password: "string",
-        mobile: 2,
-        fatherMobile: 2,
-        fatherJob: 2,
-        gender: 2,
-        userName: values.Username,
-        stateId: 2,
-        email: "string",
-        schoolStagesId: 2,
-      })
-      .then((response) => {
-        console.log(response);
-      });
+    if (values.User) {
+      axios
+        .post(
+          "http://104.155.188.57:8080/manasa/rest/student/studentregister",
+          {
+            companyId: 74,
+            branchId: 176,
+            fullName: values.fullName,
+            password: values.fullName,
+            mobile: values.mobile,
+            fatherMobile: values.fatherMobile,
+            fatherJob: values.mobile,
+            gender: 1,
+            userName: values.fullName,
+            stateId: values.state,
+            email: values.email,
+            schoolStagesId: values.schoolStage,
+          }
+        )
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   }, [values.User]);
+
   const handleGov = (e, { value }) => {
-    setValues({ ...values, Governorate: { value: value, id: e.target.id } });
+    setValues({ ...values, state: value });
   };
   const handleCen = (e, { value }) => {
     setValues({ ...values, Center: value });
   };
   const handleClass = (e, { value }) => {
-    setValues({ ...values, Class: value });
+    setValues({ ...values, schoolStage: value });
   };
   const onUserChange = (e, { value }) => {
-    setValues({ ...values, Username: value });
+    setValues({ ...values, fullName: value });
   };
   return (
     <Form onSubmit={onSubmit}>
@@ -95,10 +105,7 @@ const SignUpForm = () => {
             إنشاء حساب
           </Form.Button>
         </div>
-        <div
-        className="select-fields"
-          
-        >
+        <div className="select-fields">
           <Form.Select
             style={{ height: "50px", fontSize: "18px", marginBottom: "4%" }}
             fluid
@@ -113,11 +120,11 @@ const SignUpForm = () => {
             onChange={handleCen}
             label="المركز"
             placeholder={
-              values.Governorate
-                ? centersOptions[values.Governorate.id][0].text
+              values.state
+                ? centersOptions[values.state][0].text
                 : centersOptions[0][0].text
             }
-            options={centersOptions[values.Governorate?.id]}
+            options={values.state && centersOptions[values.state]}
           />
           <Form.Select
             style={{ height: "50px", fontSize: "18px", marginBottom: "4%" }}
@@ -132,7 +139,7 @@ const SignUpForm = () => {
             fluid
             label="اسم المستخدم"
             placeholder="إدخال حروف إنجليزية وأرقام فقط - لا يوجد مسافات"
-            value={values.Username}
+            value={values.fullName}
             onChange={onUserChange}
           />
         </div>

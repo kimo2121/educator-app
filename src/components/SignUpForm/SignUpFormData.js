@@ -1,20 +1,20 @@
 export const inputFieldInfo = [
-  { text: "تليفون الطالب", type: "number", name: "StudenPhone" },
-  { text: "تليفون ولى الأمر", type: "number", name: "ParentPhone" },
-  { text: "البريد الإلكتروني", name: "Email" },
+  { text: "تليفون الطالب", type: "number", name: "mobile" },
+  { text: "تليفون ولى الأمر", type: "number", name: "fatherMobile" },
+  { text: "البريد الإلكتروني", name: "email" },
 ];
 export const yearSelect = [
-  { text: "الصف الأول الإعدادى", value: "1st year" },
-  { text: "الصف الثاني الإعدادى", value: "2nd year" },
-  { text: " الصف الثالث الإعدادى", value: "3rd year" },
+  { text: "الصف الأول الإعدادى", value: 1 },
+  { text: "الصف الثاني الإعدادى", value: 2 },
+  { text: " الصف الثالث الإعدادى", value: 3 },
 ];
 
 export const GovernorateOptions = [
-  { text: "القاهرة", value: "cairo", id: 0 },
-  { text: "الأسكندرية", value: "alexandria", id: 1 },
-  { text: "الإسماعيلية", value: "esmaeilia", id: 2 },
-  { text: "الجيزة", value: "giza", id: 3 },
-  { text: "القليوبية", value: "qalyubia", id: 4 },
+  { text: "القاهرة", value: 0 },
+  { text: "الأسكندرية", value: 1 },
+  { text: "الإسماعيلية", value: 2 },
+  { text: "الجيزة", value: 3 },
+  { text: "القليوبية", value: 4 },
 ];
 export const centersOptions = [
   [{ text: "القاهرة", value: "cairo" }],

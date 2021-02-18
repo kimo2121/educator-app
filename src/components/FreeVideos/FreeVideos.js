@@ -13,6 +13,7 @@ const FreeVideos = () => {
   return (
     <div className="videos-section">
       <h2>الفديوهات المجانية</h2>
+      <div className="header-highlight"></div>
       <div className="free-videos">
         {videosData.map((item, index) => (
           <Card key={index}>

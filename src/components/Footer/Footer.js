@@ -17,8 +17,8 @@ const Footer = () => {
         </div>
         <div className="icons-div">
           {icons.map((icon, index) => (
-            <div className="each-icon-div">
-              <Icon key={index} className="each-icon" name={icon} size="big" />
+            <div key={index} className="each-icon-div">
+              <Icon className="each-icon" name={icon} size="big" />
             </div>
           ))}
         </div>

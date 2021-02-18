@@ -23,29 +23,29 @@
 
 .arrow {
   border-radius: 100px;
-  width: 45px;
-  height: 45px;
+  width: 34px;
+  height: 34px;
   color: #539aac;
   background-color: rgb(255, 255, 255);
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0px 0px 1px 2px rgba(107, 107, 107, 0.226);
+  /* box-shadow: 0px 0px 1px 2px rgba(107, 107, 107, 0.226); */
 }
 
 .left-direction {
-  margin-top: 20% !important;
-  margin-left: 10% !important;
+  margin-top: 10% !important;
+  margin-left: -3% !important;
 }
 .right-direction {
-  margin-top: 20% !important;
-  margin-left: 15% !important;
+  margin-top: 10% !important;
+  margin-left: 7% !important;
 }
 .next {
-  right: 0%;
+  right: 2%;
   top: 42%;
 }
 .prev {
-  left: 0%;
+  left: 2%;
   top: 42%;
 }
