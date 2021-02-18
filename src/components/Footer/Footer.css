@@ -1,42 +1,68 @@
 .footer-section-one {
   min-height: 50vh;
   background: #0f3a47;
+  padding-top: 7%;
+  padding-left: 10%;
 }
 .contact-info {
   width: fit-content;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-size: 25px;
-  color: white;
+  font-size: 4vh;
+  padding-left: 10%;
+  color: rgb(255, 255, 255);
 }
 .paragraph-image {
   display: flex;
   text-align: left;
 }
+.each-icon {
+  color: white;
+}
+.each-icon-div {
+  border-radius: 50px;
+  height: 11vh;
+  width: 11vh;
+  background-color: #204f5d;
+  padding-top: 1.5vw;
+  padding-left: 1vh;
+  margin: 1vw;
+  /* margin-right: 1vw; */
+}
+.icons-div {
+  margin-left: 33%;
+  display: flex;
+}
 @media only screen and (max-width: 600px) {
   .footer-section-one {
-    padding-left: 20%;
+    padding-left: 27% !important;
   }
   .paragraph-image {
-    display: block;
+    display: block !important;
   }
   .icons-div {
-    margin-left: -25% !important;
+    margin-left: 4%;
+  }
+  .contact-info {
+    padding-left: 0%;
+    text-align: center;
+  }
+  .footer-section-one{
+  padding-left: 33% !important;
+
   }
 }
 .footer-section-one img {
-  margin-left: 7%;
   width: 35vw;
-  height: 35vh;
+  height: 20vh;
 }
 .footer-section-two {
-  padding-top: 2%;
   min-height: 12vh;
+  padding-top: 2%;
   text-align: center;
   background: #204f5d;
 }
 
 .footer-section-two span {
-  font-size: 25px;
+  font-size: 4vh;
+  height: auto;
   color: white;
 }

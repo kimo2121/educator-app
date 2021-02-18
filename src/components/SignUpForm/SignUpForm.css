@@ -1,9 +1,27 @@
+@media only screen and (max-width: 768px) {
+  .input-fields,
+  .select-fields {
+    width: 100% !important;
+  margin-right: 0% !important;
+
+  }
+}
+
 .form h4 {
-  font-size: 18px;
+  font-size: 2.9vh;
   font-weight: 600;
 }
+.input-fields {
+  width: 55%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+.select-fields {
+  width: 55%;
+  margin-top: 3%;
+}
 .form label {
-  font-size: 20px !important;
+  font-size: 3.1vh !important;
   font-weight: 900 !important;
   color: #204f5d !important;
   margin-bottom: 2% !important;
@@ -13,15 +31,16 @@
   text-align: start !important;
 }
 .form ::placeholder {
-  font-size: 20px;
+  font-size: 3vh;
   text-align: right !important;
 }
 .divider {
+  font-size: 3.1vh;
   position: absolute;
   right: 5% !important;
 }
 .item {
- padding-left: 7rem !important;
+  padding-left: 7rem !important;
   text-align: right !important;
 }
 .icon {

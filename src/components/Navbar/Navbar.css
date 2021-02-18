@@ -1,13 +1,13 @@
 .nav-bar {
   display: flex;
-  min-height: 10vh;
+  min-height: 13vh;
   background-color: white;
 }
 .single-nav-route {
   font-family: "Cairo", sans-serif !important;
-  font-size: 16px;
+  font-size: 2.6vh;
   font-weight: bold;
-  margin-top: 3%;
+  margin-top: 4%;
   color: #198baf !important;
 }
 .sign-in {
@@ -19,24 +19,27 @@
 }
 .sign-up,
 .sign-in {
-  margin-top: 1% !important;
-  width: 10vw;
-  height: 7vh;
+  margin-top: 2% !important;
+  min-width: 10vw;
+  height: 65%;
   padding-top: 2%;
-  border-radius: 50rem;
+  border-radius: 50px;
 }
 
 .nav-routes {
   margin-left: 8%;
-  font-size: 20px;
+  
   width: 50%;
   justify-content: space-evenly;
   display: flex;
 }
 .nav-logo {
-  right: 0;
+  position: absolute;
+  right: 15vw;
+  margin-top: 1rem;
+  width: 8rem !important;
 }
-.nav-logo svg {
-  width: 15rem;
-  height: 15rem;
+
+.nav-logo img {
+  width: 24vh !important;
 }

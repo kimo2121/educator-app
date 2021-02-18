@@ -63,21 +63,14 @@ const SignUpForm = () => {
           marginBottom: "5%",
         }}
       >
-        <div
-          style={{
-            width: "55%",
-            fontSize: "25px",
-            marginTop: "3%",
-            marginRight: "3%",
-          }}
-        >
+        <div className="input-fields">
           {inputFieldInfo.map((input, index) => (
             <Form.Input
               key={index}
               type={input.type}
               style={{
                 color: "#204f5d",
-                height: "8vh",
+                height: "50px",
                 marginBottom: "4%",
               }}
               name={input.name}
@@ -90,12 +83,12 @@ const SignUpForm = () => {
           <Form.Button
             className="form-button"
             style={{
-              height: "8vh",
+              height: "50px",
               width: "100%",
               marginTop: "2rem",
               background: "#198BAF",
               color: "white",
-              fontSize: "18px",
+              fontSize: "2.9vh",
               fontWeight: "bold",
             }}
           >
@@ -103,14 +96,11 @@ const SignUpForm = () => {
           </Form.Button>
         </div>
         <div
-          style={{
-            width: "55%",
-            fontSize: "25px",
-            marginTop: "3%",
-          }}
+        className="select-fields"
+          
         >
           <Form.Select
-            style={{ height: "8vh", fontSize: "18px", marginBottom: "4%" }}
+            style={{ height: "50px", fontSize: "18px", marginBottom: "4%" }}
             fluid
             onChange={handleGov}
             label="المحافظة"
@@ -118,7 +108,7 @@ const SignUpForm = () => {
             options={GovernorateOptions}
           />
           <Form.Select
-            style={{ height: "8vh", fontSize: "18px", marginBottom: "4%" }}
+            style={{ height: "50px", fontSize: "18px", marginBottom: "4%" }}
             fluid
             onChange={handleCen}
             label="المركز"
@@ -130,7 +120,7 @@ const SignUpForm = () => {
             options={centersOptions[values.Governorate?.id]}
           />
           <Form.Select
-            style={{ height: "8vh", fontSize: "18px", marginBottom: "4%" }}
+            style={{ height: "50px", fontSize: "18px", marginBottom: "4%" }}
             fluid
             label="الصف الدراسي"
             onChange={handleClass}
@@ -138,7 +128,7 @@ const SignUpForm = () => {
             options={yearSelect}
           />
           <Form.Input
-            style={{ height: "8vh" }}
+            style={{ height: "50px" }}
             fluid
             label="اسم المستخدم"
             placeholder="إدخال حروف إنجليزية وأرقام فقط - لا يوجد مسافات"

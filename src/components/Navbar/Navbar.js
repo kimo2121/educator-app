@@ -23,11 +23,9 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <div className="nav-logo">
-        <Link to="/">
-          <img src={logo2} alt="" />
-        </Link>
-      </div>
+      <Link className="nav-logo" to="/">
+        <img src={logo2} alt="" />
+      </Link>
     </div>
   );
 };

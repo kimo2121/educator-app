@@ -1,12 +1,12 @@
 .sign-up-header {
   height: 28vh;
-  padding-top: 4rem;
+  padding-top: 10vh;
   margin-bottom: 2%;
   text-align: center;
   background: #204f5d;
 }
 .sign-up-header h2 {
-  font-size: 30px;
+  font-size: 4.8vh;
   color: white;
   font-weight: 900;
 }
