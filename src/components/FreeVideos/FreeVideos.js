@@ -6,9 +6,9 @@ import video3 from "../../assets/video3.png";
 import { Card, Image } from "semantic-ui-react";
 const FreeVideos = () => {
   const videosData = [
-    { img: video1, text: "آلية عمل العام الدراسي الجديد" },
-    { img: video2, text: "الدعامة فى الإنسان / العمود الفقري" },
     { img: video3, text: "آلية عمل العام الدراسي الجديد" },
+    { img: video2, text: "الدعامة فى الإنسان / العمود الفقري" },
+    { img: video1, text: "آلية عمل العام الدراسي الجديد" },
   ];
   return (
     <div className="videos-section">
