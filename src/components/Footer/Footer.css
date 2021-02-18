@@ -38,6 +38,9 @@
   .paragraph-image {
     display: block !important;
   }
+  .each-icon-div{
+  padding-top: 2.2vw;
+  }
   .icons-div {
     margin-left: 4%;
   }
@@ -45,13 +48,28 @@
     padding-left: 0%;
     text-align: center;
   }
-  .footer-section-one{
-  padding-left: 33% !important;
-
+  .footer-section-one {
+    padding-left: 33% !important;
   }
 }
+@media only screen and (max-width: 500px) {
+  .footer-section-one {
+    padding-left: 28% !important;
+  }
+  .each-icon-div{
+    padding-top: 2.9vw;
+    }
+}@media only screen and (max-width: 400px) {
+  .footer-section-one {
+    padding-left: 25% !important;
+  }
+  .each-icon-div{
+    padding-top: 3.5vw;
+    }
+}
+
 .footer-section-one img {
-  width: 35vw;
+  width: 35vh;
   height: 20vh;
 }
 .footer-section-two {

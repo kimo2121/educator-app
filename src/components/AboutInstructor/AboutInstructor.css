@@ -19,6 +19,17 @@
     width: 45vw !important;
   }
 }
+@media only screen and (max-width: 500px) {
+  .intro img {
+    margin-left: 25%;
+    width: 48vw !important;
+  }
+}@media only screen and (max-width: 400px) {
+  .intro img {
+    margin-left: 22%;
+    width: 55vw !important;
+  }
+}
 .intro {
   display: flex;
   min-height: 40vh;

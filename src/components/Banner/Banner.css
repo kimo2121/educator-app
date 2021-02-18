@@ -15,9 +15,9 @@
 }
 .each-slide-in-banner div {
   z-index: 20;
-  position: absolute;
-  font-size: 40px;
-  margin: -18% 0% 0% 28%;
+  position: relative;
+  font-size: 3.8vw;
+  margin: -40vh 0% 0% 0%;
   color: rgb(255, 255, 255);
 }
 
