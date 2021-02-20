@@ -3,7 +3,6 @@
   background-color: #e3f1f5;
   padding-top: 3%;
   width: 100%;
-  /* padding-bottom: 3%; */
 }
 .videos-section h2 {
   margin-block-start: 0;
@@ -24,7 +23,6 @@
   justify-content: center;
   display: flex;
   width: 100%;
-  /* margin-left: 7.5%; */
 }
 .card {
   margin-top: 0% !important;
