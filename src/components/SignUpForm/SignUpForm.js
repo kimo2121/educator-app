@@ -98,7 +98,7 @@ const SignUpForm = () => {
               marginTop: "2rem",
               background: "#198BAF",
               color: "white",
-              fontSize: "2.9vh",
+              fontSize: "2.9vmin",
               fontWeight: "bold",
             }}
           >

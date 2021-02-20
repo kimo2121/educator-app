@@ -5,11 +5,12 @@
 }
 .single-nav-route {
   font-family: "Cairo", sans-serif !important;
-  font-size: 2.6vh;
+  font-size: 2.6vmin;
   font-weight: bold;
-  margin-top: 4%;
+  margin-top: 4% !important;
   color: #198baf !important;
 }
+
 .sign-in {
   background: #198baf;
   color: white !important;
@@ -22,14 +23,13 @@
   margin-top: 2% !important;
   min-width: 10vw;
   height: 65%;
-  padding-top: 2%;
+  padding-top: 2% !important;
   border-radius: 50px;
 }
 
 .nav-routes {
-  margin-left: 8%;
-  
-  width: 50%;
+  margin-left: 8% !important;
+  width: 55%;
   justify-content: space-evenly;
   display: flex;
 }

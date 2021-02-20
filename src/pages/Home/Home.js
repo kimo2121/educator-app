@@ -16,14 +16,14 @@ const Home = () => {
     <div>
       <Banner />
       <CustumeButton
-        children={<FaIcons.FaSignInAlt className="svg-icons" size='5.1vh'/>}
+        children={<FaIcons.FaSignInAlt className="svg-icons" size='4.1vw'/>}
         title={"سجل دخولك الأن"}
       />
       <Link to="/sign-up">
         <CustumeButton
           signUp
           children={
-            <BsIcons.BsFillPersonPlusFill className="svg-icons" size='5.2vh'  />
+            <BsIcons.BsFillPersonPlusFill className="svg-icons" size='4.2vw'  />
           }
           title={"أنشئ حساب جديد"}
         />

@@ -1,23 +1,22 @@
 .banner-component {
-  height: 100%;
+  height: 75%;
   width: 100%;
   background-color: rgb(0, 150, 195);
 }
 .each-slide-in-banner {
-  height: 75vh !important;
   display: block !important;
   outline: none;
 }
 .each-slide-in-banner img {
   opacity: 0.5;
   width: 100%;
-  height: 75vh;
 }
 .each-slide-in-banner div {
   z-index: 20;
-  position: relative;
+  position: absolute;
   font-size: 3.8vw;
-  margin: -40vh 0% 0% 0%;
+  top: 44%;
+  margin-left: 3.4%;
   color: rgb(255, 255, 255);
 }
 
